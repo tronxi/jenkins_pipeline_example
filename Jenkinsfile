@@ -1,10 +1,6 @@
 pipeline {
     agent any
     
-    environment {
-        SSH_PASSWORD = credentials('SSH_PASSWORD')
-    }
-
     stages {
         stage('Hello') {
             steps {
